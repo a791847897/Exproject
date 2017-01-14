@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="fApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .cleanfloat {
+            overflow: hidden;
+            zoom: 1;
+        }
+        .header-custom {
+            height: 64px;
+            width: 810px;
+        }
+        img {
+            padding: 4px;
+            border: 1px solid #f4f2f2;
+            width: 200px;
+            height: 123px;
+        }
+
+        a:visited a:focus a:active a:hover {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #f17420;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            outline: 0;
+            color: #999;
+        }
+
+        .figure-custom {
+            float: left;
+            width: 210px;
+            height: 136px;
+        }
+
+        .content-custom {
+            /*width: 810px;*/
+            /*height: 136px;*/
+            padding: 5px;
+        }
+
+        .p-custom {
+            float: right;
+            /*width: 590px;*/
+            /*height: 135px;*/
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .article-item .header-custom h1 a {
+            font-size: 20px;
+            color: #666;
+        }
+
+        .content {
+            padding: 5px;
+            width: 70%;
+            float: left;
+
+
+        }
+
+        .article-footer {
+            float: left;
+            margin-bottom: 45px;
+            margin-right: 45px;
+        }
+
+        .header-a {
+            float: left;
+        }
+
+        .header-form {
+            float: right;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .sub-header .header-wrap-sub ul li {
+            float: left;
+            margin-right: 20px;
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+
+        }
+
+        .sub-header .header-wrap-sub ul {
+            font-weight: 400;
+        }
+
+        .header-wrap-sub {
+            width: 1200px;
+            height: 40px;
+        }
+
+        .article-item {
+            padding: 20px;
+            width: 100%;
+            margin-bottom: 30px;
+            background-color: #fff;
+        }
+
+        h1 a:hover {
+            color: #711;
+        }
+
+        .main .sidebar {
+            float: right;
+            width: 20%;
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border-bottom: 1px solid blue;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        .sidebar ul li a {
+            border-bottom: 1px solid red;
+            text-align: center;
+            font-size: 14px;
+        }
+        .sidebar ul li {
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        .main {
+            width: 100%;
+            padding: 30px ;
+        }
+        .section1 {
+            width: 100%;
+            height: 225px;
+        }
+    </style>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="init.js"></script>
+    <script src="contro.js"></script>
+</head>
+<body>
+<div ng-controller="con1">
+    <div class="header">
+        <div class="main-header">
+            <div class="container cleanfloat">
+                <a class="header-a"><img src=""></a>
+                <form class="header-form">
+                    <div><input type="text" placeholder="请输入关键字"><input type="submit"></div>
+                </form>
+            </div>
+        </div>
+        <div class="sub-header">
+            <div class="header-wrap-sub">
+                <ul ng-repeat="item in navdata" class="cleanfloat">
+                    <li><a href="{{item.name0url}}">{{item.name0}}</a></li>
+                    <li><a href="{{item.name1url}}">{{item.name1}}</a></li>
+                    <li><a href="{{item.name2url}}">{{item.name2}}</a></li>
+                    <li><a href="{{item.name3url}}">{{item.name3}}</a></li>
+                    <li><a href="{{item.name4url}}">{{item.name4}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main cleanfloat">
+        <div class="sidebar">
+            <section class="section1">
+                <h2>最新文章</h2>
+                <ul ng-repeat="item in sidebar">
+                    <li><a href="{{item.titleurl}}">{{item.title}}</a></li>
+                </ul>
+            </section>
+            <div>aaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+            <div>aasssssssssssssssss</div>
+            <section>daddddddddddddddddd</section>
+            <section>dasdddddddddddddddddddddd</section>
+        </div>
+        <div class="content" ng-repeat="item in DataAll">
+            <article class="article-item">
+                <header class="header-custom">
+                    <h1><a href="{{item.titleurl}}"> {{item.title}} </a></h1>
+                    <p>
+                        <span>{{item.author}}</span>
+                        <span>{{item.time}}</span>
+                <span>
+                    <a href="{{item.sorturl}}">{{item.sort}}</a>
+                    <a href="{{item.sorturl2}}">{{item.sort1}}</a>
+                </span>
+                        <span>{{item.watchtime}}</span>
+                    </p>
+                </header>
+                <div class="content-custom cleanfloat">
+                    <figure class="figure-custom"><img src="{{item.img}}"></figure>
+                    <p class="p-custom">{{item.content}}</p>
+                    <footer class="article-footer"><a href="{{readallurl}}">{{item.readall}}</a></footer>
+                </div>
+
+            </article>
+        </div>
+    </div>
+</div>
+</body>
+</html>

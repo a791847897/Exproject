@@ -1,0 +1,167 @@
+{
+  "content_body": [
+    {
+      "author": "作者：过境千帆",
+      "content": "观察者模式又叫做发布订阅模式，它定义了一种一对多的关系，让多个观察者对象同时监听某一个主题对象，这个主题对象的状态发生改变时就会通知所有观察着对象。它是由两类对象组成，主题和观察者，主题负责发布事件，同时观察者通过订阅这些事件来观察该主体，发布者和订阅者是完全解耦的，彼此不知道对方的存在，两者仅仅共享一个自定义事件的名称。\n在Nodejs中通过EventEmitter实现了原生的对于这一模式...",
+      "img": "http://www.lkhweb.com/usr/themes/dev/images/default.jpg",
+      "imgtext": "深入理解JavaScript—观察者模式(publish/subscribe)",
+      "readall": "阅读全文>",
+      "readallurl": "http://www.lkhweb.com/index.php/archives/JavaScript-%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F-publish-subscribe.html",
+      "sort": "Web前端",
+      "sort1": "Javascript",
+      "sorturl": "http://www.lkhweb.com/index.php/category/Web%E5%89%8D%E7%AB%AF/",
+      "sorturl2": "http://www.lkhweb.com/index.php/category/Javascript/",
+      "time": "发布时间：2016-10-28",
+      "title": "深入理解JavaScript—观察者模式(publish/subscribe)",
+      "titleurl": "http://www.lkhweb.com/index.php/archives/JavaScript-%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F-publish-subscribe.html",
+      "watchtime": "浏览次数：198"
+    },
+    {
+      "author": "作者：李凯华",
+      "content": "很多DOM对象都有原生的事件支持，向div就有click、mouseover等事件，事件机制可以为类的设计带来很大的灵活性，相信.net程序员深有体会。随着web技术发展，使用JavaScript自定义对象愈发频繁，让自己创建的对象也有事件机制，通过事件对外通信，能够极大提高开发效率。\n\n\n简单的事件需求\n事件并不是可有可无，在某些需求下是必需的。以一个很简单的需求为例，在web开发中Dia...",
+      "img": "http://img.lkhweb.com/2016/11/2102775423.png",
+      "imgtext": "深入理解JavaScript—自定义事件",
+      "readall": "阅读全文>",
+      "readallurl": "http://www.lkhweb.com/index.php/archives/JavaScript%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6.html",
+      "sort": "Web前端",
+      "sort1": "Javascript",
+      "sorturl": "http://www.lkhweb.com/index.php/category/Web%E5%89%8D%E7%AB%AF/",
+      "sorturl2": "http://www.lkhweb.com/index.php/category/Javascript/",
+      "time": "发布时间：2016-10-23",
+      "title": "深入理解JavaScript—自定义事件",
+      "titleurl": "http://www.lkhweb.com/index.php/archives/JavaScript%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6.html",
+      "watchtime": "浏览次数：180"
+    },
+    {
+      "author": "作者：过境千帆",
+      "content": "1. 事件对象\nEvent 对象代表事件的状态，比如事件在其中发生的元素、键盘按键的状态、鼠标的位置、鼠标按钮的状态。\n什么时候会产生Event 对象呢?\n例如: 当用户单击某个元素的时候,我们给这个元素注册的事件就会触发,该事件的本质就是一个函数,而该函数的形参接收一个event对象.\n事件通常与函数结合使用，函数不会在事件发生前被执行！\n2. 事件流\n2.1 事件流发展史\n事件发展史,这...",
+      "img": "http://img.lkhweb.com/2016/11/2102775423.png",
+      "imgtext": "深入理解JavaScript—event（事件对象）",
+      "readall": "阅读全文>",
+      "readallurl": "http://www.lkhweb.com/index.php/archives/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript-event-%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1.html",
+      "sort": "Web前端",
+      "sort1": "Javascript",
+      "sorturl": "http://www.lkhweb.com/index.php/category/Web%E5%89%8D%E7%AB%AF/",
+      "sorturl2": "http://www.lkhweb.com/index.php/category/Javascript/",
+      "time": "发布时间：2016-10-09",
+      "title": "深入理解JavaScript—event（事件对象）",
+      "titleurl": "http://www.lkhweb.com/index.php/archives/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript-event-%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1.html",
+      "watchtime": "浏览次数：109"
+    },
+    {
+      "author": "作者：过境千帆",
+      "content": "获取某个月份的天数\n相信大家读小学的时候就知道一年十二个月各有多少天了，这里面有个特殊的存在——2月。闰年的2月有29天，非闰年的2月只有28天。估计不少人跟我一样，已经不记得闰年的规则了，这时候，下面的这个方法就派上用场了。\nvar date = new Date(2013, 2, 0);\ndate.getDate();  // 28\ndate = new Date(2012, 2, 0)...",
+      "img": "http://www.lkhweb.com/usr/themes/dev/images/default.jpg",
+      "imgtext": "Javascript日期类型的巧用",
+      "readall": "阅读全文>",
+      "readallurl": "http://www.lkhweb.com/index.php/archives/Javascript%E6%97%A5%E6%9C%9F%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B7%A7%E7%94%A8.html",
+      "sort": "Javascript",
+      "sort1": "",
+      "sorturl": "http://www.lkhweb.com/index.php/category/Javascript/",
+      "time": "发布时间：2016-05-29",
+      "title": "Javascript日期类型的巧用",
+      "titleurl": "http://www.lkhweb.com/index.php/archives/Javascript%E6%97%A5%E6%9C%9F%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B7%A7%E7%94%A8.html",
+      "watchtime": "浏览次数：1319"
+    },
+    {
+      "author": "作者：李凯华",
+      "content": "今天的web应用大至成千上万行的javascript代码，执行各种复杂的过程，这种演化让我们开发者必须得对可维护性有一定的认识！编写可维护性代码很重要，很多情况下我们是以他人的工作成果为基础，确保代码的可维护性，以便其他开发人员更好地工作。\n可维护性代码的特点\n\n\n可理解性：其他人可以接手代码并理解它的意图，无需原开发人员花太多时间解释！\n直观性：代码中的东西一看就能明白，尽管其操作过程复杂...",
+      "img": "http://www.lkhweb.com/usr/themes/dev/images/default.jpg",
+      "imgtext": "编写可维护性代码",
+      "readall": "阅读全文>",
+      "readallurl": "http://www.lkhweb.com/index.php/archives/%E7%BC%96%E5%86%99%E5%8F%AF%E7%BB%B4%E6%8A%A4%E6%80%A7%E4%BB%A3%E7%A0%81.html",
+      "sort": "Web前端",
+      "sort1": "",
+      "sorturl": "http://www.lkhweb.com/index.php/category/Web%E5%89%8D%E7%AB%AF/",
+      "time": "发布时间：2016-03-10",
+      "title": "编写可维护性代码",
+      "titleurl": "http://www.lkhweb.com/index.php/archives/%E7%BC%96%E5%86%99%E5%8F%AF%E7%BB%B4%E6%8A%A4%E6%80%A7%E4%BB%A3%E7%A0%81.html",
+      "watchtime": "浏览次数：1502"
+    },
+    {
+      "author": "作者：过境千帆",
+      "content": "下面的示例演示如何加密，并解密示例数据使用 Aes 类别。\nusing System;\nusing System.IO;\nusing System.Security.Cryptography;\nnamespace Aes_Example {\n    class AesExample {\n        public static void Main() {\n            try {...",
+      "img": "http://www.lkhweb.com/usr/themes/dev/images/default.jpg",
+      "imgtext": ".NET加密算法之AES",
+      "readall": "阅读全文>",
+      "readallurl": "http://www.lkhweb.com/index.php/archives/NET%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E4%B9%8BAES.html",
+      "sort": ".NET",
+      "sort1": "",
+      "sorturl": "http://www.lkhweb.com/index.php/category/NET/",
+      "time": "发布时间：2016-03-10",
+      "title": ".NET加密算法之AES",
+      "titleurl": "http://www.lkhweb.com/index.php/archives/NET%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E4%B9%8BAES.html",
+      "watchtime": "浏览次数：1226"
+    },
+    {
+      "author": "作者：过境千帆",
+      "content": "requestAnimationFrame 是专门为实现高性能的帧动画而设计的一个API。目前，各个支持requestAnimationFrame的浏览器有些还是自己的私有实现，所以必须加前缀，对于不支持requestAnimationFrame的浏览器，我们只能使用setTimeout，因为两者的使用方式几近相同，所以这两者的兼容并不难。对于支持requestAnimationFrame的...",
+      "img": "http://img.lkhweb.com/2016/02/1712083959.jpg",
+      "imgtext": "requestAnimationFrame的兼容性处理",
+      "readall": "阅读全文>",
+      "readallurl": "http://www.lkhweb.com/index.php/archives/requestAnimationFrame%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E5%A4%84%E7%90%86.html",
+      "sort": "Web前端",
+      "sort1": "",
+      "sorturl": "http://www.lkhweb.com/index.php/category/Web%E5%89%8D%E7%AB%AF/",
+      "time": "发布时间：2016-02-02",
+      "title": "requestAnimationFrame的兼容性处理",
+      "titleurl": "http://www.lkhweb.com/index.php/archives/requestAnimationFrame%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E5%A4%84%E7%90%86.html",
+      "watchtime": "浏览次数：831"
+    },
+    {
+      "author": "作者：过境千帆",
+      "content": "      今天，我介绍另外四种前端模块管理器：Bower，Browserify，Component和Duo。它们各自都有鲜明的特点，很好地弥补了Require.js的缺陷，是前端开发的利器。      需要说明的是，这篇文章并不是这四种模块管理器的教程。我只是想用最简单的例子，说明它们是干什么用的，使得读者有一个大致的印象，知道某...",
+      "img": "http://lkhweb-typecho.stor.sinaapp.com/usr/uploads/2015/09/1371773189.jpg",
+      "imgtext": "Web前端模块化管理工具",
+      "readall": "阅读全文>",
+      "readallurl": "http://www.lkhweb.com/index.php/archives/Web%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7.html",
+      "sort": "Web前端",
+      "sort1": "",
+      "sorturl": "http://www.lkhweb.com/index.php/category/Web%E5%89%8D%E7%AB%AF/",
+      "time": "发布时间：2015-09-28",
+      "title": "Web前端模块化管理工具",
+      "titleurl": "http://www.lkhweb.com/index.php/archives/Web%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7.html",
+      "watchtime": "浏览次数：1304"
+    }
+  ],
+  "navtitle": [
+    {
+      "name0": "首页",
+      "name0url": "http://www.lkhweb.com/",
+      "name1": "我的书架",
+      "name1url": "http://www.lkhweb.com/index.php/mybooks.html",
+      "name2": "留言板",
+      "name2url": "http://www.lkhweb.com/index.php/guestbook.html",
+      "name3": "关于",
+      "name3url": "http://www.lkhweb.com/index.php/about.html",
+      "name4": "个人简历",
+      "name4url": "http://www.lkhweb.com/resume/"
+    }
+  ],
+  "sidebarfirst": [
+    {
+      "title": "深入理解JavaScript—观察者模式(publish/subscribe)",
+      "titleurl": "http://www.lkhweb.com/index.php/archives/JavaScript-%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F-publish-subscribe.html"
+    },
+    {
+      "title": "深入理解JavaScript—自定义事件",
+      "titleurl": "http://www.lkhweb.com/index.php/archives/JavaScript%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6.html"
+    },
+    {
+      "title": "深入理解JavaScript—event（事件对象）",
+      "titleurl": "http://www.lkhweb.com/index.php/archives/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript-event-%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1.html"
+    },
+    {
+      "title": "Javascript日期类型的巧用",
+      "titleurl": "http://www.lkhweb.com/index.php/archives/Javascript%E6%97%A5%E6%9C%9F%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B7%A7%E7%94%A8.html"
+    },
+    {
+      "title": "编写可维护性代码",
+      "titleurl": "http://www.lkhweb.com/index.php/archives/%E7%BC%96%E5%86%99%E5%8F%AF%E7%BB%B4%E6%8A%A4%E6%80%A7%E4%BB%A3%E7%A0%81.html"
+    },
+    {
+      "title": ".NET加密算法之AES",
+      "titleurl": "http://www.lkhweb.com/index.php/archives/NET%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E4%B9%8BAES.html"
+    }
+  ]
+}

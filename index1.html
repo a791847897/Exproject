@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="fApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="init.js"></script>
+    <script src="contro.js"></script>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0 auto;
+        }
+        img{
+            width: 200px;
+             height: 110px;
+            border: 0px;
+        }
+
+    </style>
+</head>
+<body>
+<div ng-controller="con1">
+    <div ng-repeat="item in DataAll">
+        <article>
+            <header>
+                <h1>{{item.title}}</h1>
+                <p></p>
+            </header>
+            <div><img ng-src="{{item.img}}"></div>
+        </article>
+    </div>
+</div>
+
+</body>
+</html>
